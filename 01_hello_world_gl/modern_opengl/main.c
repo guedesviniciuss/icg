@@ -105,7 +105,7 @@ int main(int argc, char** argv) {
     glutInitWindowPosition(100, 100);
 
     // Título da janela
-    glutCreateWindow("Simple OpenGL");
+    glutCreateWindow("Modern OpenGL Hello World!");
 
     // Carrega o codigo fonte do Vertex shader
     LoadShader("vertex_shader.glsl", &vertex_shader_source);
