@@ -4,7 +4,7 @@
 
 
 [<img src="https://rawgit.com/eug/awesome-opengl/master/opengl-logo.svg" align="right" width="140">](https://www.opengl.org)
-<img src="./../../assets/old.png">
+<img src="./../assets/old.png">
 
 ## Objetivos
 <ol>
