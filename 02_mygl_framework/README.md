@@ -64,9 +64,9 @@ Após a exibição do pixel em tela, precisa-se definir uma função para a rast
 
 Para adaptação do algoritmo, foi necessário alterar o código ao modo que ele percorra todos os oito octantes. Para isso, cada octante possui a sua característica variando os seus coeficientes angulares. Também foi necessário se atentar ao eixo y, para essa limitação, visto que ele se comporta de forma invertida.
 
-<img src="./assets/bresenham_line.png" height=250>
+<img src="./assets/bresenham_line.png" height=200>
 
-<img src="./assets/octantes.png" height=250>
+<img src="./assets/octantes.png" height=200>
 
 
 Desse modo, o algoritmo foi adaptado e o seu pseudo-código pode ser descrito da seguinte forma:
@@ -102,12 +102,9 @@ void DrawLine(struct Line line) {
 }
 ```
 
-
-O efeito consiste basicamente em um degradê, que recebe um valor da cor no início e progride de forma suave até o final da linha até alcançar a cor final estabelecida, dando a ideia de uma mudança menos rígida da cor. Para isso, foi feito o cálculo das variações de cada componente RGB da cores (inicial e final) e dividir pelo Δx ou Δy. Feito essa etapa, basta somente ir adicionando o delta na cor e aplicando na reta. Com isso, o efeito da figura é realizado com sucesso.
-
+As arestas que irão compôr o triângulo possuem cores sólidas da escala em RGB. Entretanto, foi requisitado a interpolação gradual da cor, ou seja, que cada aresta presente no triângulo seja aplicado esse efeito. Ele consiste basicamente em um degradê, que recebe um valor da cor no início e progride de forma suave até o final da linha até alcançar a cor final estabelecida, dando a ideia de uma mudança menos rígida da cor. Para isso, foi feito o cálculo das variações de cada componente RGB da cores (inicial e final) e dividir pelo Δx ou Δy. Feito essa etapa, basta somente ir adicionando o delta na cor e aplicando na reta. Com isso, o efeito da figura é realizado com sucesso.
 
 <img src="./assets/02.png">
-
 
 
 ### Passo 03 - Rasterização de triângulos
@@ -127,7 +124,6 @@ void DrawTriangle(struct Triangle triangle) {
     ...
 }
 ```
-
 
 ## Objetivos concluídos
 
