@@ -64,9 +64,8 @@ Após a exibição do pixel em tela, precisa-se definir uma função para a rast
 
 Para adaptação do algoritmo, foi necessário alterar o código ao modo que ele percorra todos os oito octantes. Para isso, cada octante possui a sua característica variando os seus coeficientes angulares. Também foi necessário se atentar ao eixo y, para essa limitação, visto que ele se comporta de forma invertida.
 
-<img src="./assets/bresenham_line.png" height=200>
 
-<img src="./assets/octantes.png" height=200>
+![alt-text-1](./assets/bresenham_line.png "bresenham_line") ![alt-text-2](./assets/octantes.png "octantes")
 
 
 Desse modo, o algoritmo foi adaptado e o seu pseudo-código pode ser descrito da seguinte forma:
