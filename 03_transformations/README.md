@@ -55,7 +55,7 @@ Ao substituir os valores no local indicado, obteve-se o seguinte resultado:
 <img src="./assets/img01.png">
 
 
-### Passo 02 - Translação
+### Exercício 02 - Translação
 
 Modificar a matriz Model de forma que a imagem gerada pelo programa fique igual a imagem abaixo:
 
@@ -80,7 +80,7 @@ Feito isso, obtivemos o seguinte resultado:
 
 
 
-### Passo 03 -  Projeção Perspectiva
+### Exercício 03 -  Projeção Perspectiva
 
 Para obter-se os valores da matriz foi utilizada a seguinte formula:
 <img src="./assets/img10.png">
@@ -99,7 +99,7 @@ Como resultado obtivemos:
 
 <img src="./assets/img03.png">
 
-### Passo 04 -  Posição da Câmera
+### Exercício 04 -  Posição da Câmera
 
 Foi necessário montar uma nova Mview e utilizar a Mprojection do exercício anterior Dessa maneira, precisou-se transformar o Espaço do Universo para o da Câmera. O que representa uma mudança de sistemas de coordenadas que irá levar os vértices do objeto para o da câmera, realizando-se assim a mudança de base.
 
