@@ -83,6 +83,7 @@ Feito isso, obtivemos o seguinte resultado:
 ### Exercício 03 -  Projeção Perspectiva
 
 Para obter-se os valores da matriz foi utilizada a seguinte formula:
+
 <img src="./assets/img10.png">
 
 Dessa maneira, obtivemos o seguinte resultado:
