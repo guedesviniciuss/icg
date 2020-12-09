@@ -114,34 +114,6 @@ A matriz Mview foi construída a partir da matriz resultante da multiplicação 
 
 <img src="./assets/img13.png">
 
-Dessa maneira, pode-se obter o seguinte código:
-
-```c
-    glm::vec3 pos_cam = glm::vec3(-0.1f, 0.1f, 0.25f);
-    glm::vec3 up_cam = glm::vec3(0.0f, 1.0f, 0.0f);
-    glm::vec3 ponto_cam = glm::vec3(0.0f, 0.0f, 0.0f);
-
-
-    glm::vec3 z_cam = -glm::normalize(ponto_cam - pos_cam);
-    glm::vec3 x_cam = glm::normalize(glm::cross(up_cam, z_cam));
-    glm::vec3 y_cam = glm::normalize(glm::cross(z_cam, x_cam));
-
-    float Bt_aux[16]={x_cam[0], y_cam[0], z_cam[0], 0.0f,
-                      x_cam[1], y_cam[1], z_cam[1], 0.0f,
-                      x_cam[2], y_cam[2], z_cam[2], 0.0f,
-                      0.0f,0.0f,0.0f, 1.0f};
-
-    float T_aux[16]={1.0f, 0.0f, 0.0f, 0.0f,
-                     0.0f, 1.0f, 0.0f, 0.0f,
-                     0.0f, 0.0f, 1.0f, 0.0f,
-                    -pos_cam[0], -pos_cam[1], -pos_cam[2], 1.0f};
-
-    glm::mat4 T = glm::make_mat4(T_aux);
-    glm::mat4 Bt = glm::make_mat4(Bt_aux);
-
-    glm:: mat4 view_mat = Bt * T;
-```
-
 Que resultou na seguinte figura:
 
 <img src="./assets/img04.png">
