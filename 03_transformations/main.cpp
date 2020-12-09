@@ -68,10 +68,10 @@ void Display(void) {
     // You will have to change the contents of this matrix for the exercises
 
     /* --------------------------- STANDART ----------------------------------- */
-    // float model_array[16] = {1.0f, 0.0f, 0.0f, 0.0f,
-    //                          0.0f, 1.0f, 0.0f, 0.0f,
-    //                          0.0f, 0.0f, 1.0f, 0.0f,
-    //                          0.0f, 0.0f, 0.0f, 1.0f};
+    float model_array[16] = {1.0f, 0.0f, 0.0f, 0.0f,
+                             0.0f, 1.0f, 0.0f, 0.0f,
+                             0.0f, 0.0f, 1.0f, 0.0f,
+                             0.0f, 0.0f, 0.0f, 1.0f};
 
     /* --------------------------- ESCALA ----------------------------------- */
     // float model_array[16] = {0.333f, 0.0f, 0.0f, 0.0f,
@@ -86,10 +86,10 @@ void Display(void) {
     //                          1.0f, 0.0f, 0.0f, 1.0f};
 
     /* --------------------------- TRANSFORMAÇÕES LIVRES ----------------------------------- */
-    float model_array[16] = {2.0f, 0.0f, 0.0f, 0.0f,
-                         0.0f, 1.7f, 0.0f, 0.0f,
-                         0.0f, 0.0f, 1.0f, 0.0f,
-                         0.0f, 0.0f, 0.0f, 1.0f};
+    // float model_array[16] = {2.0f, 0.0f, 0.0f, 0.0f,
+    //                      0.0f, 1.7f, 0.0f, 0.0f,
+    //                      0.0f, 0.0f, 1.0f, 0.0f,
+    //                      0.0f, 0.0f, 0.0f, 1.0f};
 
     glm::mat4 model_mat = glm::make_mat4(model_array);
 
@@ -97,12 +97,12 @@ void Display(void) {
     // You will have to change the contents of this matrix for the exercises
 
     /* --------------------------- STANDART ----------------------------------- */
-    // float view_array[16] = {1.0f, 0.0f, 0.0f, 0.0f,
-    //                     0.0f, 1.0f, 0.0f, 0.0f,
-    //                     0.0f, 0.0f, 1.0f, 0.0f,
-    //                     0.0f, 0.0f, 0.0f, 1.0f};
+    float view_array[16] = {1.0f, 0.0f, 0.0f, 0.0f,
+                        0.0f, 1.0f, 0.0f, 0.0f,
+                        0.0f, 0.0f, 1.0f, 0.0f,
+                        0.0f, 0.0f, 0.0f, 1.0f};
 
-    // glm::mat4 view_mat = glm::make_mat4(view_array);
+    glm::mat4 view_mat = glm::make_mat4(view_array);
 
         /* --------------------------- POSIÇÃO DA CAMERA ----------------------------------- */
     // glm::vec3 pos_cam = glm::vec3(-0.1f, 0.1f, 0.25f); //vetor posição da camera
@@ -130,12 +130,12 @@ void Display(void) {
     // glm:: mat4 view_mat = Bt * T;
 
     /* --------------------------- TRANSFORMAÇÕES LIVRES ----------------------------------- */
-    float view_array[16] = {-1.0f, 0.0f, 0.0f, 0.0f,
-                         0.0f, -1.0f, 0.0f, 0.0f,
-                         0.0f, 0.0f, 1.0f, 0.0f,
-                         0.0f, 0.0f, 0.0f, 1.0f};
+    // float view_array[16] = {-1.0f, 0.0f, 0.0f, 0.0f,
+    //                      0.0f, -1.0f, 0.0f, 0.0f,
+    //                      0.0f, 0.0f, 1.0f, 0.0f,
+    //                      0.0f, 0.0f, 0.0f, 1.0f};
 
-    glm::mat4 view_mat = glm::make_mat4(view_array);
+    // glm::mat4 view_mat = glm::make_mat4(view_array);
 
     // Matriz Projection //////////////////////////////////////////////////////
     // You will have to change the contents of this matrix for the exercises
@@ -146,11 +146,11 @@ void Display(void) {
     //                         0.0f, 0.0f, 1.0f, 0.0f,
     //                         0.0f, 0.0f, 0.0f, 1.0f};
 
-    // /* --------------------------- PROJEÇÃO PERSPECTIVA E TRANSFORMAÇÕES LIVRES ----------------------------------- */
-    float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f,
-                        0.0f, 1.0f, 0.0f, 0.0f,
-                        0.0f, 0.0f, 1.0f, -2.0f,
-                        0.0f, 0.0f, -0.5f, 1.0f};
+    /* --------------------------- PROJEÇÃO PERSPECTIVA E TRANSFORMAÇÕES LIVRES ----------------------------------- */
+  float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f,
+                          0.0f, 1.0f, 0.0f, 0.0f,
+                          0.0f, 0.0f, 1.0f, -8.0f,
+                          0.0f, 0.0f, 0.125, 0.0f};
 
     glm::mat4 proj_mat = glm::make_mat4(proj_array);
 
